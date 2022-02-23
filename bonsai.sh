@@ -25,10 +25,10 @@ seed="$RANDOM"
 # ensure locale is correct
 LC_ALL="en_US.UTF-8"
 
-# ensure Bash version >= 4.0
-if ((BASH_VERSINFO[0] < 4)); then
-	printf '%s\n' "Error: bonsai.sh requires Bash v4.0 or higher. You have version $BASH_VERSION."
-fi
+# # ensure Bash version >= 4.0
+# if ((BASH_VERSINFO[0] < 4)); then
+# 	printf '%s\n' "Error: bonsai.sh requires Bash v4.0 or higher. You have version $BASH_VERSION."
+# fi
 
 # ensure MacOS compatibility with GNU getopt
 if [[ "$OSTYPE" == 'darwin'* ]]; then
